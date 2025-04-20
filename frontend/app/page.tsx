@@ -586,8 +586,9 @@ export default function Home() {
 
       {/* ------------------------------------------------------------------- */}
       {/* FOOTER */}
-      <footer className="py-8 px-4 md:px-6 text-center text-stone-500 text-sm">
-        © {new Date().getFullYear()} HoloHut • Track your favourite Pokémon TCG products
+      <footer style={{ textAlign: 'center', padding: '2rem', color: '#888' }}>
+        <p>Made with ❤️ by <a href="https://x.com/PriyanshKSingh" target="_blank" rel="noopener noreferrer">@PriyanshKSingh</a></p>
+        <p style={{ fontSize: '0.9rem' }}>HoloHut does not sell any products. It only tracks stock from verified Indian Pokémon TCG retailers.</p>
       </footer>
     </main>
   )
