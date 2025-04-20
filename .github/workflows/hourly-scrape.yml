@@ -1,0 +1,53 @@
+name: Hourly Scrape
+
+# Run on the hour, every hour, plus manual trigger
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pull down the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # 3. Install your scraper deps
+      - name: Install Python dependencies
+        working-directory: scrapers
+        run: |
+          python -m venv venv
+          . venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Run the scraper
+      - name: Run scraper
+        working-directory: scrapers
+        run: |
+          . venv/bin/activate
+          python scraper.py
+
+      # 5. Commit & push only if products.json changed
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/data/products.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: hourly update products.json"
+          git push

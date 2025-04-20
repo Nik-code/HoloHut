@@ -1,0 +1,35 @@
+# === Python artifacts ===
+__pycache__/
+*.py[cod]
+*.so
+venv/
+.venv/
+env/
+ENV/
+*.env
+.env.*
+
+
+# === Node / Next.js ===
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+frontend/.cache/
+
+# Lockfiles (if you prefer pnpm, you can ignore package-lock.json)
+#frontend/package-lock.json
+#frontend/yarn.lock
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === IDE / OS ===
+.DS_Store
+.vscode/
+.idea/
+
+# TypeScript incremental build file
+*.tsbuildinfo

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 30 20% 98%;
+    --foreground: 20 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 20%;
+
+    --primary: 15 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 10% 96%;
+    --secondary-foreground: 20 10% 40%;
+
+    --muted: 30 10% 96%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 15 80% 96%;
+    --accent-foreground: 15 80% 40%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 10% 90%;
+    --input: 20 10% 90%;
+    --ring: 15 80% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 30 10% 90%;
+
+    --card: 20 10% 15%;
+    --card-foreground: 30 10% 90%;
+
+    --popover: 20 10% 15%;
+    --popover-foreground: 30 10% 90%;
+
+    --primary: 15 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 10% 20%;
+    --secondary-foreground: 30 10% 80%;
+
+    --muted: 20 10% 20%;
+    --muted-foreground: 30 10% 70%;
+
+    --accent: 15 70% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 10% 25%;
+    --input: 20 10% 25%;
+    --ring: 15 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Add a subtle noise texture to the background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    z-index: 1;
+  }
+}
