@@ -53,8 +53,9 @@ const tagColors = {
     "Simplified Chinese": { bg: "bg-amber-100", text: "text-amber-700" },
   },
   shop: {
-    "TCG Republic": { bg: "bg-orange-100", text: "text-orange-700" },
+    "TCG Republic":    { bg: "bg-orange-100", text: "text-orange-700" },
     "Bored Game Company": { bg: "bg-lime-100", text: "text-lime-700" },
+    "PokeVolt":        { bg: "bg-blue-100",   text: "text-blue-700" },  // new
   },
   type: {
     "Booster Pack": { bg: "bg-blue-100", text: "text-blue-700" },
@@ -370,10 +371,28 @@ export default function Home() {
           <p className="text-center text-stone-500 mb-4 text-sm">Sellers Showcased</p>
           <div className="flex justify-center gap-8">
             <div className="relative h-12 w-40">
-              <Image src="/images/tcgrepublic-logo.png" alt="TCG Republic" fill className="object-contain" />
+              <Image
+                src="/images/tcgrepublic-logo.png"
+                alt="TCG Republic"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative h-12 w-40">
-              <Image src="/images/bgc-logo.png" alt="BGC" fill className="object-contain" />
+              <Image
+                src="/images/bgc-logo.png"
+                alt="BGC"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-12 w-40">
+              <Image
+                src="/images/pokevolt.png"
+                alt="PokeVolt"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         </div>

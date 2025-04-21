@@ -1,11 +1,10 @@
-import requests
+import asyncio
+import aiohttp
 from bs4 import BeautifulSoup
 import json
-import re
-import time
 import os
+import re
 
-# HTTP headers to mimic a real browser
 HEADERS = {
     'User-Agent': (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -13,17 +12,23 @@ HEADERS = {
         "Chrome/114.0.0.0 Safari/537.36"
     )
 }
-
-# Filepath for the frontend JSON
 OUTPUT_PATH = os.path.join('frontend', 'data', 'products.json')
+BASE_URL = "https://www.pokevolt.shop"
+
+POKEVOLT_SECTIONS = {
+    "etb":            {"path": "/etb",                  "type": "Elite Trainer Box",   "language": "English"},
+    "boosterbundle":  {"path": "/boosterbundle",        "type": "Booster Bundle",       "language": "English"},
+    "japanesesets":   {"path": "/japenesesets",         "type": "Japanese Set",         "language": "Japanese"},
+    "boosterboxes":   {"path": "/boosterboxes",         "type": "Booster Box",          "language": "English"},
+    "singleboosters": {"path": "/single-booster-packs", "type": "Single Booster Pack",  "language": "English"},
+    "tins":           {"path": "/tins",                 "type": "Tin",                  "language": "English"},
+    "collection":     {"path": "/collection-boxes",     "type": "Collection Box",       "language": "English"},
+    "blisters":       {"path": "/blisters",             "type": "Blister Pack",         "language": "English"},
+}
 
 
 def extract_details_from_name(name):
-    """
-    Detect language and product type from product name.
-    """
     nl = name.lower()
-    # language detection
     if 'japanese' in nl:
         language = 'Japanese'
     elif 'korean' in nl:
@@ -32,8 +37,6 @@ def extract_details_from_name(name):
         language = 'Simplified Chinese'
     else:
         language = 'English'
-
-    # product type detection
     if 'booster display box' in nl and '(36 packs)' in nl:
         p_type = 'Booster Display Box (36 Packs)'
     elif 'precious collector box' in nl:
@@ -50,12 +53,10 @@ def extract_details_from_name(name):
         p_type = 'Collection Box'
     else:
         p_type = None
-
     return language, p_type
 
 
 def parse_price(text):
-    """Convert formatted price string to a number."""
     num = text.replace('₹', '').replace(',', '').strip()
     try:
         f = float(num)
@@ -64,123 +65,7 @@ def parse_price(text):
         return None
 
 
-def scrape_bgc():
-    """Scrape Bored Game Company products in stock."""
-    out = []
-    page = 1
-    while True:
-        url = (
-            'https://in.boredgamecompany.com/?s=Pokemon+TCG&post_type=product&product_cat=0'
-            if page == 1 else
-            f'https://in.boredgamecompany.com/page/{page}/?s=Pokemon+TCG&post_type=product&product_cat=0'
-        )
-        print(f'[BGC] Fetching {url}')
-        resp = requests.get(url, headers=HEADERS)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, 'html.parser')
-
-        found = False
-        for li in soup.select('li.product-col'):
-            if 'instock' not in li.get('class', []):
-                continue
-            found = True
-
-            link_el = li.select_one('a.product-loop-title')
-            name = link_el.get_text(strip=True) if link_el else None
-            href = link_el['href'] if link_el and link_el.has_attr('href') else None
-            if not name or not href:
-                continue
-
-            language, p_type = extract_details_from_name(name)
-
-            price_el = li.select_one('span.price ins .amount') or li.select_one('span.price .amount')
-            fprice = price_el.get_text(strip=True) if price_el else None
-            price = parse_price(fprice) if fprice else None
-
-            img_el = li.select_one('div.product-image img')
-            img_url = img_el.get('src') or img_el.get('data-src') if img_el else None
-
-            out.append({
-                'name':           name,
-                'price':          price,
-                'formattedPrice': fprice,
-                'image':          img_url,
-                'link':           href,
-                'language':       language,
-                'type':           p_type,
-                'shop':           'Bored Game Company',
-                'inStock':        True
-            })
-
-        if not found:
-            break
-        page += 1
-
-    return out
-
-
-def scrape_tcgrepublic():
-    """Scrape TCG Republic products in stock."""
-    out = []
-    page = 1
-    while True:
-        url = (
-            'https://tcgrepublic.in/product-category/pokemon-tcg/'
-            if page == 1 else
-            f'https://tcgrepublic.in/product-category/pokemon-tcg/page/{page}/'
-        )
-        print(f'[TCGR] Fetching {url}')
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        if resp.status_code == 404:
-            print(f'[TCGR] 404 on page {page}, stopping.')
-            break
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, 'html.parser')
-
-        items = soup.select('li.product.type-product')
-        if not items:
-            break
-
-        for prod in items:
-            if prod.select_one('span.ast-shop-product-out-of-stock') or 'outofstock' in prod.get('class', []):
-                continue
-
-            name_el = prod.select_one('h2.woocommerce-loop-product__title')
-            name = name_el.get_text(strip=True) if name_el else None
-            link_el = prod.select_one('a.ast-loop-product__link')
-            href = link_el['href'] if link_el and link_el.has_attr('href') else None
-            if not name or not href:
-                continue
-
-            language, p_type = extract_details_from_name(name)
-
-            pe = prod.select_one('span.price span.woocommerce-Price-amount.amount bdi')
-            fprice = pe.get_text(strip=True) if pe else None
-            price = parse_price(fprice) if fprice else None
-
-            img_el = prod.select_one('div.astra-shop-thumbnail-wrap img')
-            img_url = img_el.get('src') or img_el.get('data-lazy-src') if img_el else None
-
-            out.append({
-                'name':           name,
-                'price':          price,
-                'formattedPrice': fprice,
-                'image':          img_url,
-                'link':           href,
-                'language':       language,
-                'type':           p_type,
-                'shop':           'TCG Republic',
-                'inStock':        True
-            })
-
-        page += 1
-        time.sleep(1)
-
-    return out
-
-
 def load_existing():
-    """Load existing products JSON or return empty list."""
     try:
         with open(OUTPUT_PATH, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -188,26 +73,176 @@ def load_existing():
         return []
 
 
-def main():
-    bgc  = scrape_bgc()
-    tcgr = scrape_tcgrepublic()
-    all_products = bgc + tcgr
+async def fetch(session, url, **kwargs):
+    async with session.get(url, headers=HEADERS, **kwargs) as r:
+        r.raise_for_status()
+        return await r.text()
 
-    # assign IDs sequentially
+
+async def scrape_bgc(session):
+    out, page = [], 1
+    while True:
+        url = (
+            'https://in.boredgamecompany.com/?s=Pokemon+TCG&post_type=product&product_cat=0'
+            if page == 1 else
+            f'https://in.boredgamecompany.com/page/{page}/?s=Pokemon+TCG&post_type=product&product_cat=0'
+        )
+        print(f'[BGC] {url}')
+        html = await fetch(session, url)
+        soup = BeautifulSoup(html, 'html.parser')
+        found = False
+        for li in soup.select('li.product-col'):
+            if 'instock' not in li.get('class', []):
+                continue
+            found = True
+            a = li.select_one('a.product-loop-title')
+            name = a.get_text(strip=True) if a else None
+            link = a['href'] if a and a.has_attr('href') else None
+            if not (name and link):
+                continue
+            lang, typ = extract_details_from_name(name)
+            pe = li.select_one('span.price ins .amount') or li.select_one('span.price .amount')
+            fprice = pe.get_text(strip=True) if pe else None
+            price = parse_price(fprice) if fprice else None
+            img = li.select_one('div.product-image img')
+            img_url = img.get('src') or img.get('data-src') if img else None
+            out.append({
+                'name': name, 'price': price, 'formattedPrice': fprice,
+                'image': img_url, 'link': link,
+                'language': lang, 'type': typ,
+                'shop': 'Bored Game Company', 'inStock': True
+            })
+        if not found:
+            break
+        page += 1
+    return out
+
+
+async def scrape_tcgrepublic(session):
+    out, page = [], 1
+    while True:
+        url = (
+            'https://tcgrepublic.in/product-category/pokemon-tcg/'
+            if page == 1 else
+            f'https://tcgrepublic.in/product-category/pokemon-tcg/page/{page}/'
+        )
+        print(f'[TCGR] {url}')
+        try:
+            html = await fetch(session, url, timeout=15)
+        except aiohttp.ClientResponseError as e:
+            if e.status == 404:
+                break
+            raise
+        soup = BeautifulSoup(html, 'html.parser')
+        items = soup.select('li.product.type-product')
+        if not items:
+            break
+        for prod in items:
+            if prod.select_one('span.ast-shop-product-out-of-stock') or 'outofstock' in prod.get('class', []):
+                continue
+            name_el = prod.select_one('h2.woocommerce-loop-product__title')
+            link_el = prod.select_one('a.ast-loop-product__link')
+            name = name_el.get_text(strip=True) if name_el else None
+            link = link_el['href'] if link_el and link_el.has_attr('href') else None
+            if not (name and link):
+                continue
+            lang, typ = extract_details_from_name(name)
+            pe = prod.select_one('span.price span.woocommerce-Price-amount.amount bdi')
+            fprice = pe.get_text(strip=True) if pe else None
+            price = parse_price(fprice) if fprice else None
+            img = prod.select_one('div.astra-shop-thumbnail-wrap img')
+            img_url = img.get('src') or img.get('data-lazy-src') if img else None
+            out.append({
+                'name': name, 'price': price, 'formattedPrice': fprice,
+                'image': img_url, 'link': link,
+                'language': lang, 'type': typ,
+                'shop': 'TCG Republic', 'inStock': True
+            })
+        page += 1
+    return out
+
+
+async def scrape_pokevolt_section(session, name, info, seen, sem):
+    prods, page = [], 1
+    while True:
+        url = f"{BASE_URL}{info['path']}?page={page}"
+        print(f'[PokeVolt:{name}] {url}')
+        async with sem:
+            html = await fetch(session, url, timeout=15)
+        soup = BeautifulSoup(html, 'html.parser')
+        items = soup.select('li[data-hook="product-list-grid-item"]')
+        if not items:
+            break
+        for li in items:
+            if li.select_one('[data-hook="product-item-out-of-stock"]'):
+                continue
+            a = li.select_one('a[data-hook="product-item-container"]')
+            link = a['href'] if a else None
+            if not link or link in seen:
+                continue
+            seen.add(link)
+
+            # title, price, etc...
+            name_el = li.select_one('[data-hook="product-item-name"]')
+            title = name_el.get_text(strip=True) if name_el else None
+
+            # **fixed image logic**:
+            img = li.find('img')
+            raw_url = None
+            if img:
+                raw_url = img.get('data-src') or img.get('data-lazy-src') or img.get('src')
+                # strip Wix-transform path (/v1/…)
+                if raw_url and '/v1/' in raw_url:
+                    raw_url = raw_url.split('/v1/')[0]
+
+            txt = next((t for t in li.stripped_strings if t.startswith('₹')), None)
+            price = parse_price(txt) if txt else None
+
+            prods.append({
+                'name': title, 'price': price, 'formattedPrice': txt,
+                'image': raw_url, 'link': link,
+                'language': info['language'], 'type': info['type'],
+                'shop': 'PokeVolt', 'inStock': True
+            })
+        page += 1
+    return prods
+
+
+async def scrape_pokevolt(session):
+    sem = asyncio.Semaphore(5)
+    seen = set()
+    tasks = [
+        scrape_pokevolt_section(session, key, info, seen, sem)
+        for key, info in POKEVOLT_SECTIONS.items()
+    ]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    all_p = []
+    for res in results:
+        if isinstance(res, Exception):
+            print(f"[PokeVolt] section error: {res}")
+        else:
+            all_p.extend(res)
+    return all_p
+
+
+async def main():
+    async with aiohttp.ClientSession() as session:
+        bgc, tcgr, pokev = await asyncio.gather(
+            scrape_bgc(session),
+            scrape_tcgrepublic(session),
+            scrape_pokevolt(session),
+        )
+    all_products = bgc + tcgr + pokev
     for idx, item in enumerate(all_products, 1):
         item['id'] = idx
-
     existing = load_existing()
     if existing == all_products:
-        print("No changes detected, skipping write.")
+        print("No changes, skipping write.")
         return
-
-    # write only if data changed
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(all_products, f, ensure_ascii=False, indent=2)
-
     print(f"\n✅ Scraped {len(all_products)} products → {OUTPUT_PATH}")
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())
