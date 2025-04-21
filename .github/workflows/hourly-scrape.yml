@@ -32,7 +32,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # 4. Install your scraper deps
+      # 4. Install your scraper deps (in scrapers/)
       - name: Install Python dependencies
         working-directory: scrapers
         run: |
@@ -41,14 +41,13 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 5. Run the scraper
+      # 5. Run the scraper from the **repo root**, so it writes to frontend/data/…
       - name: Run scraper
-        working-directory: scrapers
         run: |
-          . venv/bin/activate
-          python scraper.py
+          . scrapers/venv/bin/activate
+          python scrapers/scraper.py
 
-      # 6. Commit & push only if products.json changed
+      # 6. Commit & push only if frontend/data/products.json changed
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
