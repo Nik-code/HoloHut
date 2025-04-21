@@ -23,7 +23,16 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 3. Install your scraper deps
+      # 3. Cache pip installs
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scrapers/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4. Install your scraper deps
       - name: Install Python dependencies
         working-directory: scrapers
         run: |
@@ -32,14 +41,14 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4. Run the scraper
+      # 5. Run the scraper
       - name: Run scraper
         working-directory: scrapers
         run: |
           . venv/bin/activate
           python scraper.py
 
-      # 5. Commit & push only if products.json changed
+      # 6. Commit & push only if products.json changed
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"

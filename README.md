@@ -36,8 +36,9 @@
 ## 🛍️ Current Sellers
 
 <p align="center">
-  <img src="frontend/public/images/tcgrepublic-logo.png" alt="TCG Republic" width="180" style="margin: 0 20px;" />
-  <img src="frontend/public/images/bgc-logo.png" alt="Bored Game Company" width="180" style="margin: 0 20px;" />
+<img src="frontend/public/images/tcgrepublic-logo.png" alt="TCG Republic" width="180" style="margin: 0 20px;" />
+<img src="frontend/public/images/bgc-logo.png" alt="Bored Game Company" width="180" style="margin: 0 20px;" />
+<img src="frontend/public/images/pokevolt.png" alt="PokeVolt" width="180" style="margin: 0 20px;" />
 </p>
 
 ---

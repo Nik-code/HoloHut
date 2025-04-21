@@ -68,27 +68,31 @@ def load_existing():
         return []
 
 async def fetch(session, url, **kwargs):
+    """Exponential backoff + jitter on 429, then give up."""
     max_retries = 3
-    backoff = 1
+    base = 1
     for attempt in range(1, max_retries+1):
         try:
             async with session.get(url, headers=HEADERS, **kwargs) as resp:
                 if resp.status == 429:
-                    print(f"[429] {url}, retrying in {backoff}s (#{attempt})")
-                    await asyncio.sleep(backoff)
-                    backoff *= 2
+                    wait = base + (base * 0.5)
+                    print(f"[429] {url}, retrying in {wait:.1f}s (#{attempt})")
+                    await asyncio.sleep(wait)
+                    base *= 2
                     continue
                 resp.raise_for_status()
                 return await resp.text()
         except ClientResponseError as e:
             if e.status == 429 and attempt < max_retries:
-                print(f"[429] {url}, retrying in {backoff}s (#{attempt})")
-                await asyncio.sleep(backoff)
-                backoff *= 2
+                wait = base + (base * 0.5)
+                print(f"[429] {url}, retrying in {wait:.1f}s (#{attempt})")
+                await asyncio.sleep(wait)
+                base *= 2
                 continue
             raise
     raise RuntimeError(f"Failed to fetch {url} after {max_retries} tries")
 
+# ————— Bored Game Company scraper (unchanged) —————
 async def scrape_bgc(session):
     out, page = [], 1
     while True:
@@ -124,9 +128,9 @@ async def scrape_bgc(session):
         if not found:
             break
         page += 1
-        await asyncio.sleep(1)    # polite pause
     return out
 
+# ————— TCG Republic scraper (unchanged) —————
 async def scrape_tcgrepublic(session):
     out, page = [], 1
     while True:
@@ -167,34 +171,39 @@ async def scrape_tcgrepublic(session):
                 'shop': 'TCG Republic', 'inStock': True
             })
         page += 1
-        await asyncio.sleep(1)    # polite pause
     return out
 
+# ————— PokeVolt scraper (throttled & filtered) —————
 async def scrape_pokevolt_section(session, name, info, seen, sem):
     prods, page = [], 1
     while True:
         url = f"{BASE_URL}{info['path']}?page={page}"
         print(f'[PokeVolt:{name}] {url}')
-        async with sem:
-            html = await fetch(session, url, timeout=15)
+        try:
+            async with sem:  
+                html = await fetch(session, url, timeout=15)
+        except RuntimeError as e:
+            print(f"[PokeVolt:{name}] giving up on page {page}: {e}")
+            break
+
         soup = BeautifulSoup(html, 'html.parser')
-        items = soup.select('li[data-hook="product-list-grid-item"]')
+        items = soup.select('li[data-hook=\"product-list-grid-item\"]')
         if not items:
             break
+
         for li in items:
-            if li.select_one('[data-hook="product-item-out-of-stock"]'):
+            if li.select_one('[data-hook=\"product-item-out-of-stock\"]'):
                 continue
-            a = li.select_one('a[data-hook="product-item-container"]')
-            link = a['href'] if a else None
+            title_el = li.select_one('[data-hook=\"product-item-name\"]')
+            title = title_el.get_text(strip=True) if title_el else None
+            if not title or 'one piece' in title.lower():
+                continue  # skip One Piece
+
+            link = title_el.find_parent('a')['href']
             if not link or link in seen:
                 continue
             seen.add(link)
 
-            # title
-            name_el = li.select_one('[data-hook="product-item-name"]')
-            title = name_el.get_text(strip=True) if name_el else None
-
-            # scrubbed image URL
             img = li.find('img')
             raw_url = None
             if img:
@@ -202,22 +211,28 @@ async def scrape_pokevolt_section(session, name, info, seen, sem):
                 if raw_url and '/v1/' in raw_url:
                     raw_url = raw_url.split('/v1/')[0]
 
-            # price string
             txt = next((t for t in li.stripped_strings if t.startswith('₹')), None)
             price = parse_price(txt) if txt else None
 
             prods.append({
-                'name': title, 'price': price, 'formattedPrice': txt,
-                'image': raw_url, 'link': link,
-                'language': info['language'], 'type': info['type'],
-                'shop': 'PokeVolt', 'inStock': True
+                'name': title,
+                'price': price,
+                'formattedPrice': txt,
+                'image': raw_url,
+                'link': link,
+                'language': info['language'],
+                'type': info['type'],
+                'shop': 'PokeVolt',
+                'inStock': True
             })
+
         page += 1
-        await asyncio.sleep(1)    # polite pause
+        await asyncio.sleep(2)  # strict 2s pause between PokeVolt pages
+
     return prods
 
 async def scrape_pokevolt(session):
-    sem = asyncio.Semaphore(2)  # only 2 pages in flight
+    sem = asyncio.Semaphore(1)  # only one PokeVolt page at a time
     seen = set()
     tasks = [
         scrape_pokevolt_section(session, key, info, seen, sem)
@@ -232,6 +247,7 @@ async def scrape_pokevolt(session):
             all_p.extend(res)
     return all_p
 
+# ————— Main —————
 async def main():
     async with aiohttp.ClientSession() as session:
         bgc, tcgr, pokev = await asyncio.gather(
@@ -239,13 +255,16 @@ async def main():
             scrape_tcgrepublic(session),
             scrape_pokevolt(session),
         )
+
     all_products = bgc + tcgr + pokev
     for idx, item in enumerate(all_products, 1):
         item['id'] = idx
+
     existing = load_existing()
     if existing == all_products:
         print("No changes, skipping write.")
         return
+
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(all_products, f, ensure_ascii=False, indent=2)
