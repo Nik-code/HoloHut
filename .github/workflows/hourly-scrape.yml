@@ -6,16 +6,21 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# Grant this job write permission on the repo contents
+permissions:
+  contents: write
+
 jobs:
   scrape-and-commit:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Pull down the repo
+      # 1. Pull down the repo (and keep GITHUB_TOKEN creds)
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
       # 2. Set up Python
       - name: Set up Python
@@ -32,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # 4. Install your scraper deps (in scrapers/)
+      # 4. Install your scraper deps
       - name: Install Python dependencies
         working-directory: scrapers
         run: |
@@ -41,13 +46,13 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 5. Run the scraper from the **repo root**, so it writes to frontend/data/…
+      # 5. Run the scraper (writes to frontend/data/products.json)
       - name: Run scraper
         run: |
           . scrapers/venv/bin/activate
           python scrapers/scraper.py
 
-      # 6. Commit & push only if frontend/data/products.json changed
+      # 6. Commit & push only if that file changed
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
