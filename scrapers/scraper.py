@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+from aiohttp import ClientResponseError
 from bs4 import BeautifulSoup
 import json
 import os
@@ -74,9 +75,27 @@ def load_existing():
 
 
 async def fetch(session, url, **kwargs):
-    async with session.get(url, headers=HEADERS, **kwargs) as r:
-        r.raise_for_status()
-        return await r.text()
+    max_retries = 3
+    backoff = 1
+    for attempt in range(1, max_retries + 1):
+        try:
+            async with session.get(url, headers=HEADERS, **kwargs) as resp:
+                if resp.status == 429:
+                    # too many requests → wait & retry
+                    print(f"[429] {url}, retrying in {backoff}s (#{attempt})")
+                    await asyncio.sleep(backoff)
+                    backoff *= 2
+                    continue
+                resp.raise_for_status()
+                return await resp.text()
+        except ClientResponseError as e:
+            if e.status == 429 and attempt < max_retries:
+                print(f"[429] {url}, retrying in {backoff}s (#{attempt})")
+                await asyncio.sleep(backoff)
+                backoff *= 2
+                continue
+            raise
+    raise RuntimeError(f"Failed to fetch {url} after {max_retries} tries")
 
 
 async def scrape_bgc(session):
