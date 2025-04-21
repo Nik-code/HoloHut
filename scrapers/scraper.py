@@ -4,7 +4,6 @@ from aiohttp import ClientResponseError
 from bs4 import BeautifulSoup
 import json
 import os
-import re
 
 HEADERS = {
     'User-Agent': (
@@ -27,17 +26,13 @@ POKEVOLT_SECTIONS = {
     "blisters":       {"path": "/blisters",             "type": "Blister Pack",         "language": "English"},
 }
 
-
 def extract_details_from_name(name):
     nl = name.lower()
-    if 'japanese' in nl:
-        language = 'Japanese'
-    elif 'korean' in nl:
-        language = 'Korean'
-    elif 'simplified chinese' in nl:
-        language = 'Simplified Chinese'
-    else:
-        language = 'English'
+    if 'japanese' in nl: language = 'Japanese'
+    elif 'korean' in nl: language = 'Korean'
+    elif 'simplified chinese' in nl: language = 'Simplified Chinese'
+    else: language = 'English'
+
     if 'booster display box' in nl and '(36 packs)' in nl:
         p_type = 'Booster Display Box (36 Packs)'
     elif 'precious collector box' in nl:
@@ -54,17 +49,16 @@ def extract_details_from_name(name):
         p_type = 'Collection Box'
     else:
         p_type = None
+
     return language, p_type
 
-
 def parse_price(text):
-    num = text.replace('₹', '').replace(',', '').strip()
+    num = text.replace('₹','').replace(',','').strip()
     try:
         f = float(num)
         return int(f) if f.is_integer() else f
     except ValueError:
         return None
-
 
 def load_existing():
     try:
@@ -73,15 +67,13 @@ def load_existing():
     except (FileNotFoundError, json.JSONDecodeError):
         return []
 
-
 async def fetch(session, url, **kwargs):
     max_retries = 3
     backoff = 1
-    for attempt in range(1, max_retries + 1):
+    for attempt in range(1, max_retries+1):
         try:
             async with session.get(url, headers=HEADERS, **kwargs) as resp:
                 if resp.status == 429:
-                    # too many requests → wait & retry
                     print(f"[429] {url}, retrying in {backoff}s (#{attempt})")
                     await asyncio.sleep(backoff)
                     backoff *= 2
@@ -96,7 +88,6 @@ async def fetch(session, url, **kwargs):
                 continue
             raise
     raise RuntimeError(f"Failed to fetch {url} after {max_retries} tries")
-
 
 async def scrape_bgc(session):
     out, page = [], 1
@@ -117,8 +108,7 @@ async def scrape_bgc(session):
             a = li.select_one('a.product-loop-title')
             name = a.get_text(strip=True) if a else None
             link = a['href'] if a and a.has_attr('href') else None
-            if not (name and link):
-                continue
+            if not (name and link): continue
             lang, typ = extract_details_from_name(name)
             pe = li.select_one('span.price ins .amount') or li.select_one('span.price .amount')
             fprice = pe.get_text(strip=True) if pe else None
@@ -134,8 +124,8 @@ async def scrape_bgc(session):
         if not found:
             break
         page += 1
+        await asyncio.sleep(1)    # polite pause
     return out
-
 
 async def scrape_tcgrepublic(session):
     out, page = [], 1
@@ -148,7 +138,7 @@ async def scrape_tcgrepublic(session):
         print(f'[TCGR] {url}')
         try:
             html = await fetch(session, url, timeout=15)
-        except aiohttp.ClientResponseError as e:
+        except ClientResponseError as e:
             if e.status == 404:
                 break
             raise
@@ -163,8 +153,7 @@ async def scrape_tcgrepublic(session):
             link_el = prod.select_one('a.ast-loop-product__link')
             name = name_el.get_text(strip=True) if name_el else None
             link = link_el['href'] if link_el and link_el.has_attr('href') else None
-            if not (name and link):
-                continue
+            if not (name and link): continue
             lang, typ = extract_details_from_name(name)
             pe = prod.select_one('span.price span.woocommerce-Price-amount.amount bdi')
             fprice = pe.get_text(strip=True) if pe else None
@@ -178,8 +167,8 @@ async def scrape_tcgrepublic(session):
                 'shop': 'TCG Republic', 'inStock': True
             })
         page += 1
+        await asyncio.sleep(1)    # polite pause
     return out
-
 
 async def scrape_pokevolt_section(session, name, info, seen, sem):
     prods, page = [], 1
@@ -201,19 +190,19 @@ async def scrape_pokevolt_section(session, name, info, seen, sem):
                 continue
             seen.add(link)
 
-            # title, price, etc...
+            # title
             name_el = li.select_one('[data-hook="product-item-name"]')
             title = name_el.get_text(strip=True) if name_el else None
 
-            # **fixed image logic**:
+            # scrubbed image URL
             img = li.find('img')
             raw_url = None
             if img:
                 raw_url = img.get('data-src') or img.get('data-lazy-src') or img.get('src')
-                # strip Wix-transform path (/v1/…)
                 if raw_url and '/v1/' in raw_url:
                     raw_url = raw_url.split('/v1/')[0]
 
+            # price string
             txt = next((t for t in li.stripped_strings if t.startswith('₹')), None)
             price = parse_price(txt) if txt else None
 
@@ -224,11 +213,11 @@ async def scrape_pokevolt_section(session, name, info, seen, sem):
                 'shop': 'PokeVolt', 'inStock': True
             })
         page += 1
+        await asyncio.sleep(1)    # polite pause
     return prods
 
-
 async def scrape_pokevolt(session):
-    sem = asyncio.Semaphore(5)
+    sem = asyncio.Semaphore(2)  # only 2 pages in flight
     seen = set()
     tasks = [
         scrape_pokevolt_section(session, key, info, seen, sem)
@@ -242,7 +231,6 @@ async def scrape_pokevolt(session):
         else:
             all_p.extend(res)
     return all_p
-
 
 async def main():
     async with aiohttp.ClientSession() as session:
