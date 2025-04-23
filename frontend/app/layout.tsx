@@ -1,6 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'HoloHut — Pokémon TCG Stock Tracker',
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:url" content="https://holo-hut.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
