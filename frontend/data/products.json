@@ -300,18 +300,6 @@
     "id": 25
   },
   {
-    "name": "Ruler of Black Flames Booster Box (Korean)",
-    "price": 5500,
-    "formattedPrice": "₹5,500.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2023/09/obf-korean.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/ruler-of-black-flames-booster-box-korean/",
-    "language": "Korean",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 26
-  },
-  {
     "name": "Scarlet & Violet Base Booster Pack",
     "price": 580,
     "formattedPrice": "₹580.00",
@@ -321,7 +309,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 27
+    "id": 26
   },
   {
     "name": "Scarlet & Violet-Surging Sparks Booster Bundle (6 Packs)",
@@ -333,7 +321,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 27
   },
   {
     "name": "Pokémon TCG: Journey Together Booster Bundle (6 Packs)",
@@ -345,7 +333,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 28
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Shrouded Fable Booster Bundle (6 Packs)",
@@ -357,7 +345,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 29
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Stellar Crown Booster Bundle",
@@ -369,7 +357,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 30
   },
   {
     "name": "Pokémon TCG: Sword & Shield-Silver Tempest Booster Bundle (6 Packs)",
@@ -381,7 +369,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 32
+    "id": 31
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Paldean Fates Booster Bundle",
@@ -393,7 +381,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 33
+    "id": 32
   },
   {
     "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
@@ -405,7 +393,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 34
+    "id": 33
   },
   {
     "name": "Pokemon TCG: SV8a Terastal Festival ex Booster box [jp]",
@@ -413,6 +401,18 @@
     "formattedPrice": "₹12,500.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_46c7ea81302949089756e586f98b29f1~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-sv8a-terastal-festival-ex-booster-box-jp",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 34
+  },
+  {
+    "name": "Pokemon TCG: Super Electric Breaker [jp]",
+    "price": 8500,
+    "formattedPrice": "₹8,500.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_6eb497ec560e44c18ba471ef47bad3f5~mv2.webp",
+    "link": "https://www.pokevolt.shop/product-page/pokemontcg-super-electric-breaker-jp",
     "language": "Japanese",
     "type": "Japanese Set",
     "shop": "PokeVolt",
