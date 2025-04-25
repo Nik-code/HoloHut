@@ -516,18 +516,6 @@
     "id": 43
   },
   {
-    "name": "Pokémon TCG: Sword & Shield-Silver Tempest Sleeved Booster Pack",
-    "price": 900,
-    "formattedPrice": "₹900.00",
-    "image": "https://static.wixstatic.com/media/46848b_8c7d1f59e5c641778aa51a4d385f4cf7~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-sword-shield-silver-tempest-sleeved-booster-pack",
-    "language": "English",
-    "type": "Single Booster Pack",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 44
-  },
-  {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
     "price": 4000,
     "formattedPrice": "₹4,000.00",
@@ -537,7 +525,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 45
+    "id": 44
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -549,7 +537,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 46
+    "id": 45
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -561,7 +549,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 47
+    "id": 46
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -573,7 +561,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 48
+    "id": 47
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -585,7 +573,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 49
+    "id": 48
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -597,6 +585,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 50
+    "id": 49
   }
 ]
