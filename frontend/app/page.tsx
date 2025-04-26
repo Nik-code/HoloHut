@@ -606,8 +606,30 @@ export default function Home() {
       {/* ------------------------------------------------------------------- */}
       {/* FOOTER */}
       <footer style={{ textAlign: 'center', padding: '2rem', color: '#888' }}>
-        <p>Made with ❤️ by <a href="https://x.com/PriyanshKSingh" target="_blank" rel="noopener noreferrer">@PriyanshKSingh</a></p>
-        <p style={{ fontSize: '0.9rem' }}>HoloHut does not sell any products. It only tracks stock from verified Indian Pokémon TCG retailers.</p>
+        <p>
+          Made with ❤️ by <a href="https://x.com/PriyanshKSingh" target="_blank" rel="noopener noreferrer">@PriyanshKSingh</a>
+        </p>
+        <div style={{ marginTop: '1rem' }}>
+          <a
+            href="https://github.com/Nik-code/HoloHut/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: '1rem', color: '#888', textDecoration: 'underline' }}
+          >
+            GitHub
+          </a>
+          <a
+            href="https://x.com/PriyanshKSingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#888', textDecoration: 'underline' }}
+          >
+            Twitter
+          </a>
+        </div>
+        <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+          HoloHut does not sell any products. It only tracks stock from verified Indian Pokémon TCG retailers.
+        </p>
       </footer>
     </main>
   )
