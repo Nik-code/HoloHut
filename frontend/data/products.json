@@ -96,78 +96,6 @@
     "id": 8
   },
   {
-    "name": "Pokémon TCG: Precious Collector Box – Japanese",
-    "price": 52000,
-    "formattedPrice": "₹52,000.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2024/11/PCB-300x300.jpg",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-precious-collector-box-japanese/",
-    "language": "Japanese",
-    "type": "Precious Collector Box",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 9
-  },
-  {
-    "name": "Pokémon TCG: Shocking Volt Tackle Booster Packs – Japanese (1 pack, 5 cards)",
-    "price": 800,
-    "formattedPrice": "₹800.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2024/11/JPSVTBP-300x300.jpg",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-shocking-volt-tackle-booster-packs-japanese/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 10
-  },
-  {
-    "name": "Pokémon TCG: Shocking Volt Tackle Booster Box – Japanese (30 packs, 5 cards)",
-    "price": 24000,
-    "formattedPrice": "₹24,000.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2024/11/JPSVTBB-300x300.jpg",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-shocking-volt-tackle-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 11
-  },
-  {
-    "name": "Pokémon TCG: Incandescent Arcana Booster Packs – Japanese (1 pack, 6 cards)",
-    "price": 700,
-    "formattedPrice": "₹700.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2024/11/JPIABP-300x300.jpg",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-incandescent-arcana-booster-packs-japanese/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 12
-  },
-  {
-    "name": "Pokémon TCG: Incandescent Arcana Booster Box – Japanese (20 packs, 6 cards)",
-    "price": 14000,
-    "formattedPrice": "₹14,000.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2024/11/JPIABB.jpg",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-incandescent-arcana-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 13
-  },
-  {
-    "name": "Pokemon TCG: Celebrations Ultra Premium Collection Box",
-    "price": 42000,
-    "formattedPrice": "₹42,000.00",
-    "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2021/09/CelebrationsUltraPremiumBox-300x300.webp",
-    "link": "https://in.boredgamecompany.com/products/pokemon-tcg-celebrations-ultra-premium-collection-box/",
-    "language": "English",
-    "type": "Collection Box",
-    "shop": "Bored Game Company",
-    "inStock": true,
-    "id": 14
-  },
-  {
     "name": "Paradigm Trigger Booster Box (Korean)",
     "price": 5200,
     "formattedPrice": "₹5,200.00",
@@ -177,7 +105,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 15
+    "id": 9
   },
   {
     "name": "Pokemon Crimson Haze Booster Box (Korean)",
@@ -189,7 +117,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 16
+    "id": 10
   },
   {
     "name": "Pokemon Cyber Judge Booster Box Japanese",
@@ -201,7 +129,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 17
+    "id": 11
   },
   {
     "name": "Pokemon Gem Booster Box Simplified Chinese [CBB1C]",
@@ -213,7 +141,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 18
+    "id": 12
   },
   {
     "name": "Pokemon Gem Booster Pack Simplified Chinese [CBB1C]",
@@ -225,7 +153,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 19
+    "id": 13
   },
   {
     "name": "Pokemon Mask of Change Booster Box (Japanese)",
@@ -237,7 +165,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 20
+    "id": 14
   },
   {
     "name": "Pokemon Mask of Change Booster Pack (Japanese)",
@@ -249,7 +177,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 21
+    "id": 15
   },
   {
     "name": "Pokemon Ruler Of Black Flame Booster Pack (Korean)",
@@ -261,7 +189,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 22
+    "id": 16
   },
   {
     "name": "Pokemon Stellar Miracle Booster Box (Korean)",
@@ -273,7 +201,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 23
+    "id": 17
   },
   {
     "name": "Pokemon Stellar Miracle Booster Pack (Korean)",
@@ -285,7 +213,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 24
+    "id": 18
   },
   {
     "name": "Pokemon Violet EX Booster Box Japanese",
@@ -297,7 +225,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 25
+    "id": 19
   },
   {
     "name": "Scarlet & Violet Base Booster Pack",
@@ -309,7 +237,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 26
+    "id": 20
   },
   {
     "name": "Scarlet & Violet-Surging Sparks Booster Bundle (6 Packs)",
@@ -321,7 +249,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 21
   },
   {
     "name": "Pokémon TCG: Journey Together Booster Bundle (6 Packs)",
@@ -333,7 +261,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 22
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Shrouded Fable Booster Bundle (6 Packs)",
@@ -345,7 +273,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 23
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Stellar Crown Booster Bundle",
@@ -357,7 +285,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 24
   },
   {
     "name": "Pokémon TCG: Sword & Shield-Silver Tempest Booster Bundle (6 Packs)",
@@ -369,7 +297,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 25
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Paldean Fates Booster Bundle",
@@ -381,7 +309,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 32
+    "id": 26
   },
   {
     "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
@@ -393,7 +321,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 33
+    "id": 27
   },
   {
     "name": "Pokemon TCG: SV8a Terastal Festival ex Booster box [jp]",
@@ -405,7 +333,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 34
+    "id": 28
   },
   {
     "name": "Pokemon TCG: Super Electric Breaker [jp]",
@@ -417,7 +345,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 35
+    "id": 29
   },
   {
     "name": "Pokémon TCG- Paradise Dragona Booster Box [JP]",
@@ -429,7 +357,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 36
+    "id": 30
   },
   {
     "name": "Pokemon Crimson Haze sv5a Booster Pack",
@@ -441,7 +369,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 37
+    "id": 31
   },
   {
     "name": "Pokemon Crimson Haze sv5a Booster Box (JP)",
@@ -453,7 +381,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 38
+    "id": 32
   },
   {
     "name": "Pokemon Night Wanderer sv6a booster pack",
@@ -465,7 +393,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 39
+    "id": 33
   },
   {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
@@ -477,7 +405,7 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 40
+    "id": 34
   },
   {
     "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
@@ -489,19 +417,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 41
-  },
-  {
-    "name": "Pokémon TCG: Obsidian Flames Sleeved Booster Pack (10 Cards)",
-    "price": 800,
-    "formattedPrice": "₹800.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_6a6a63ab0ba44ffc9e890d2392273b58~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-scarlet-violet-obsidian-flames-sleeved-booster-pack-10-cards",
-    "language": "English",
-    "type": "Single Booster Pack",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 42
+    "id": 35
   },
   {
     "name": "Pokémon TCG: Sword & Shield-Silver Tempest Sleeved Booster Pack",
@@ -513,7 +429,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 43
+    "id": 36
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -525,7 +441,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 44
+    "id": 37
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -537,7 +453,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 45
+    "id": 38
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -549,7 +465,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 46
+    "id": 39
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -561,7 +477,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 47
+    "id": 40
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -573,7 +489,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 48
+    "id": 41
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -585,6 +501,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 49
+    "id": 42
   }
 ]
