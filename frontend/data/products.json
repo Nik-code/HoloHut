@@ -454,5 +454,29 @@
     "shop": "PokeVolt",
     "inStock": true,
     "id": 38
+  },
+  {
+    "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
+    "price": 4000,
+    "formattedPrice": "₹4,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_7844a209517c4177a40b1b56d0fb86c1~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/sword-shield-chilling-reign-3-pack-blister",
+    "language": "English",
+    "type": "Blister Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 39
+  },
+  {
+    "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
+    "price": 2700,
+    "formattedPrice": "₹2,700.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_e528aa8256634804baaef57aaf781beb~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pre-order-pokemon-tcg-journey-together-3-pack-blister-yanmega-scrafty",
+    "language": "English",
+    "type": "Blister Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 40
   }
 ]
