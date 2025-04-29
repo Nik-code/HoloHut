@@ -372,6 +372,54 @@
     "id": 31
   },
   {
+    "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
+    "price": 950,
+    "formattedPrice": "₹950.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_02519b6a0d314d0db9be588d43ab2fda~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paldea-evolved-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 32
+  },
+  {
+    "name": "Pokémon TCG: Scarlet & Violet-Surging Sparks Booster Pack (Random Art)",
+    "price": 900,
+    "formattedPrice": "₹900.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_a7f7d99648244d59b110e506766b4c7c~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-scarlet-violet-surging-sparks-booster-pack-random-art",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 33
+  },
+  {
+    "name": "Pokémon TCG: Obsidian Flames Sleeved Booster Pack (10 Cards)",
+    "price": 800,
+    "formattedPrice": "₹800.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_6a6a63ab0ba44ffc9e890d2392273b58~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-scarlet-violet-obsidian-flames-sleeved-booster-pack-10-cards",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 34
+  },
+  {
+    "name": "Pokémon TCG: Sword & Shield-Silver Tempest Sleeved Booster Pack",
+    "price": 900,
+    "formattedPrice": "₹900.00",
+    "image": "https://static.wixstatic.com/media/46848b_8c7d1f59e5c641778aa51a4d385f4cf7~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-sword-shield-silver-tempest-sleeved-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 35
+  },
+  {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
     "price": 4000,
     "formattedPrice": "₹4,000.00",
@@ -381,7 +429,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 32
+    "id": 36
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -393,7 +441,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 33
+    "id": 37
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -405,7 +453,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 34
+    "id": 38
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -417,7 +465,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 35
+    "id": 39
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -429,7 +477,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 36
+    "id": 40
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -441,6 +489,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 37
+    "id": 41
   }
 ]
