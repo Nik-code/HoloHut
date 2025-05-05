@@ -132,18 +132,6 @@
     "id": 11
   },
   {
-    "name": "Pokemon Mask of Change Booster Box (Japanese)",
-    "price": 6800,
-    "formattedPrice": "₹6,800.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/04/mask-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-mask-change-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 12
-  },
-  {
     "name": "Pokemon Stellar Miracle Booster Box (Korean)",
     "price": 4600,
     "formattedPrice": "₹4,600.00",
@@ -153,7 +141,7 @@
     "type": "Booster Box",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 13
+    "id": 12
   },
   {
     "name": "Pokemon Stellar Miracle Booster Pack (Korean)",
@@ -165,7 +153,7 @@
     "type": "Booster Pack",
     "shop": "TCG Republic",
     "inStock": true,
-    "id": 14
+    "id": 13
   },
   {
     "name": "Pokémon TCG: Journey Together Booster Bundle (6 Packs)",
@@ -177,7 +165,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 15
+    "id": 14
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Shrouded Fable Booster Bundle (6 Packs)",
@@ -189,7 +177,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 16
+    "id": 15
   },
   {
     "name": "Pokémon TCG: Sword & Shield-Silver Tempest Booster Bundle (6 Packs)",
@@ -201,7 +189,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 17
+    "id": 16
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-151 Booster Bundle",
@@ -213,7 +201,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 18
+    "id": 17
   },
   {
     "name": "Pokemon TCG: SV10 The Glory of Team Rocket [JP]",
@@ -225,7 +213,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 19
+    "id": 18
   },
   {
     "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
@@ -237,7 +225,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 20
+    "id": 19
   },
   {
     "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
@@ -249,7 +237,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 21
+    "id": 20
   },
   {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
@@ -261,7 +249,7 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 22
+    "id": 21
   },
   {
     "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
@@ -273,7 +261,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 23
+    "id": 22
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Surging Sparks Booster Pack (Random Art)",
@@ -285,7 +273,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 24
+    "id": 23
   },
   {
     "name": "Sword & Shield-Fusion Strike Booster Pack (10 Cards) (Random Art)",
@@ -297,7 +285,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 25
+    "id": 24
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -309,7 +297,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 26
+    "id": 25
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -321,7 +309,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 26
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -333,7 +321,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 27
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -345,7 +333,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 28
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -357,7 +345,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 29
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -369,6 +357,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 30
   }
 ]
