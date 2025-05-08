@@ -72,234 +72,6 @@
     "id": 6
   },
   {
-    "name": "Paradigm Trigger Booster Box (Korean)",
-    "price": 5200,
-    "formattedPrice": "₹5,200.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2023/09/Paradigm-Trigger-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/paradigm-trigger-booster-box-korean/",
-    "language": "Korean",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 7
-  },
-  {
-    "name": "Pokemon Combined Powers Premium Collection",
-    "price": 9500,
-    "formattedPrice": "₹9,500.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/04/combined-power.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-combined-powers-premium-collection/",
-    "language": "English",
-    "type": null,
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 8
-  },
-  {
-    "name": "Pokemon Crimson Haze Booster Box (Korean)",
-    "price": 4700,
-    "formattedPrice": "₹4,700.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/06/Crimson-haze-Korean.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-crimson-haze-booster-box-korean/",
-    "language": "Korean",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 9
-  },
-  {
-    "name": "Pokemon Crimson Haze Booster Pack (Japanese)",
-    "price": 320,
-    "formattedPrice": "₹320.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/03/Crimson-haze-booster-box.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-crimson-haze-sv5a-booster-pack/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 10
-  },
-  {
-    "name": "Pokemon Crimson Haze SV5A Booster Box",
-    "price": 9000,
-    "formattedPrice": "₹9,000.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/03/Crimson-haze-booster-box.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-crimson-haze-sv5a-booster-box/",
-    "language": "English",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 11
-  },
-  {
-    "name": "Pokemon Cyber Judge Booster Box Japanese",
-    "price": 6600,
-    "formattedPrice": "₹6,600.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/01/Cyber-Judge-Product.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-cyber-judge-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 12
-  },
-  {
-    "name": "Pokemon Gem Booster Box Simplified Chinese [CBB1C]",
-    "price": 5000,
-    "formattedPrice": "₹5,000.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2025/03/Gem-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-gem-booster-box-simplified-chinese-cbb1c/",
-    "language": "Simplified Chinese",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 13
-  },
-  {
-    "name": "Pokemon Gem Booster Pack Simplified Chinese [CBB1C]",
-    "price": 360,
-    "formattedPrice": "₹360.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2025/03/Gem-pack.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-gem-booster-pack-simplified-chinese-cbb1c/",
-    "language": "Simplified Chinese",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 14
-  },
-  {
-    "name": "Pokemon GO Booster Pack",
-    "price": 1050,
-    "formattedPrice": "₹1,050.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2022/10/Pokemon-Go-Pack-copy.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-go-booster-pack/",
-    "language": "English",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 15
-  },
-  {
-    "name": "Pokemon Journey Together Booster Pack",
-    "price": 750,
-    "formattedPrice": "₹750.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2025/05/JTE.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-journey-together-booster-pack/",
-    "language": "English",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 16
-  },
-  {
-    "name": "Pokemon Mask of Change Booster Box (Japanese)",
-    "price": 6800,
-    "formattedPrice": "₹6,800.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/04/mask-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-mask-change-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 17
-  },
-  {
-    "name": "Pokemon Mask of Change Booster Pack (Japanese)",
-    "price": 240,
-    "formattedPrice": "₹240.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/04/mask-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-mask-of-change-booster-pack-japanese/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 18
-  },
-  {
-    "name": "Pokemon Pradox Rift Booster Pack",
-    "price": 720,
-    "formattedPrice": "₹720.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2023/11/Paradox.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-pradox-rift-booster-pack/",
-    "language": "English",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 19
-  },
-  {
-    "name": "Pokemon Scarlet Violet 151 Booster Pack",
-    "price": 1900,
-    "formattedPrice": "₹1,900.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2023/10/151-eng-pack-2.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-scarlet-violet-151/",
-    "language": "English",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 20
-  },
-  {
-    "name": "Pokemon Shiny Treasure Ex Booster Pack (Japanese)",
-    "price": 900,
-    "formattedPrice": "₹900.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2023/12/Shiny-Treasure-EX.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-shiny-treasure-ex-booster-pack-japanese/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 21
-  },
-  {
-    "name": "Pokemon Stellar Miracle Booster Box (Japanese)",
-    "price": 6800,
-    "formattedPrice": "₹6,800.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/08/Stellar-bb.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-stellar-miracle-booster-box-japanese/",
-    "language": "Japanese",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 22
-  },
-  {
-    "name": "Pokemon Stellar Miracle Booster Box (Korean)",
-    "price": 4600,
-    "formattedPrice": "₹4,600.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2025/01/Stellar-miracle.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-stellar-miracle-booster-box-korean/",
-    "language": "Korean",
-    "type": "Booster Box",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 23
-  },
-  {
-    "name": "Pokemon Stellar Miracle Booster Pack (Japanese)",
-    "price": 240,
-    "formattedPrice": "₹240.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/08/Stellar-pack.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-stellar-miracle-booster-pack-japanese/",
-    "language": "Japanese",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 24
-  },
-  {
-    "name": "Pokemon Temporal Forces Booster Pack",
-    "price": 620,
-    "formattedPrice": "₹620.00",
-    "image": "https://i0.wp.com/tcgrepublic.in/wp-content/uploads/2024/03/Temporal-Forces-product.webp?resize=300%2C300&ssl=1",
-    "link": "https://tcgrepublic.in/product/pokemon-temporal-forces-booster-pack/",
-    "language": "English",
-    "type": "Booster Pack",
-    "shop": "TCG Republic",
-    "inStock": true,
-    "id": 25
-  },
-  {
     "name": "Pokemon TCG: Scarlet and Violet Journey Together Elite Trainer Box",
     "price": 9000,
     "formattedPrice": "₹9,000.00",
@@ -309,7 +81,7 @@
     "type": "Elite Trainer Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 26
+    "id": 7
   },
   {
     "name": "Scarlet & Violet-Surging Sparks Booster Bundle (6 Packs)",
@@ -321,7 +93,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 8
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Shrouded Fable Booster Bundle (6 Packs)",
@@ -333,7 +105,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 9
   },
   {
     "name": "Pokémon TCG: Sword & Shield-Silver Tempest Booster Bundle (6 Packs)",
@@ -345,7 +117,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 10
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-151 Booster Bundle",
@@ -357,7 +129,7 @@
     "type": "Booster Bundle",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 11
   },
   {
     "name": "Pokemon TCG: SV10 Glory of Team Rocket Booster Pack [JP]",
@@ -369,7 +141,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 12
   },
   {
     "name": "Pokemon TCG: SV10 The Glory of Team Rocket [JP]",
@@ -381,7 +153,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 32
+    "id": 13
   },
   {
     "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
@@ -393,7 +165,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 33
+    "id": 14
   },
   {
     "name": "Pokemon Night Wanderer sv6a booster pack",
@@ -405,7 +177,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 34
+    "id": 15
   },
   {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
@@ -417,7 +189,7 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 35
+    "id": 16
   },
   {
     "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
@@ -429,7 +201,7 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 36
+    "id": 17
   },
   {
     "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
@@ -441,7 +213,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 37
+    "id": 18
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet-Surging Sparks Booster Pack (Random Art)",
@@ -453,7 +225,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 38
+    "id": 19
   },
   {
     "name": "Sword & Shield-Fusion Strike Booster Pack (10 Cards) (Random Art)",
@@ -465,7 +237,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 39
+    "id": 20
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -477,7 +249,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 40
+    "id": 21
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -489,7 +261,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 41
+    "id": 22
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -501,7 +273,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 42
+    "id": 23
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -513,7 +285,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 43
+    "id": 24
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -525,7 +297,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 44
+    "id": 25
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -537,7 +309,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 45
+    "id": 26
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -549,6 +321,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 46
+    "id": 27
   }
 ]
