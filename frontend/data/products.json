@@ -1,8 +1,8 @@
 [
   {
     "name": "Pokémon TCG: Scarlet & Violet: Twilight Masquerade Booster Display Box (36 Packs)",
-    "price": 34200,
-    "formattedPrice": "₹34,200.00",
+    "price": 29070,
+    "formattedPrice": "₹29,070.00",
     "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2025/02/TMBB-300x300.png",
     "link": "https://in.boredgamecompany.com/products/pokemon-tcg-scarlet-violet-twilight-masquerade-booster-display-box-36-packs/",
     "language": "English",
@@ -13,8 +13,8 @@
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet – Twilight Masquerade 3 Pack Blister",
-    "price": 3000,
-    "formattedPrice": "₹3,000.00",
+    "price": 2750,
+    "formattedPrice": "₹2,750.00",
     "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2025/02/TM3BP-Snorlax-300x300.png",
     "link": "https://in.boredgamecompany.com/products/pokemon-tcg-scarlet-violet-twilight-masquerade-3-pack-blister/",
     "language": "English",
@@ -25,8 +25,8 @@
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet – Temporal Forces 3 Pack Blister",
-    "price": 3000,
-    "formattedPrice": "₹3,000.00",
+    "price": 2750,
+    "formattedPrice": "₹2,750.00",
     "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2025/02/TF3BP-Cleffa-300x300.png",
     "link": "https://in.boredgamecompany.com/products/pokemon-tcg-scarlet-violet-temporal-forces-3-pack-blister/",
     "language": "English",
@@ -37,8 +37,8 @@
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet: Twilight Masquerade Booster Pack (1 Pack 10 Cards)",
-    "price": 1000,
-    "formattedPrice": "₹1,000.00",
+    "price": 850,
+    "formattedPrice": "₹850.00",
     "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2025/02/TMBP-1-300x300.jpg",
     "link": "https://in.boredgamecompany.com/products/pokemon-tcg-scarlet-violet-twilight-masquerade-booster-pack-1-pack-10-cards/",
     "language": "English",
@@ -49,8 +49,8 @@
   },
   {
     "name": "Pokémon TCG: Scarlet & Violet: Temporal Forces Booster Pack (1 Pack 10 Cards)",
-    "price": 1000,
-    "formattedPrice": "₹1,000.00",
+    "price": 850,
+    "formattedPrice": "₹850.00",
     "image": "https://149853888.v2.pressablecdn.com/wp-content/uploads/2025/02/TFBP-1-300x300.jpg",
     "link": "https://in.boredgamecompany.com/products/pokemon-tcg-scarlet-violet-temporal-forces-booster-pack-1-pack-10-cards/",
     "language": "English",
@@ -420,23 +420,23 @@
     "id": 35
   },
   {
-    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
-    "price": 7350,
-    "formattedPrice": "₹7,350.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
-    "language": "Japanese",
-    "type": "Japanese Set",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 36
-  },
-  {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
     "price": 11500,
     "formattedPrice": "₹11,500.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_3649872d6fc64ac099f3a456e95e1e3d~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-obsidian-flames-half-booster-box-18-packs",
+    "language": "English",
+    "type": "Booster Box",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 36
+  },
+  {
+    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
+    "price": 7350,
+    "formattedPrice": "₹7,350.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
     "language": "English",
     "type": "Booster Box",
     "shop": "PokeVolt",
@@ -480,6 +480,30 @@
     "id": 40
   },
   {
+    "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
+    "price": 4000,
+    "formattedPrice": "₹4,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_2a6efadda643499f95606b28e60cd650~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-paradox-destinies-tin-4-booster",
+    "language": "English",
+    "type": "Tin",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 41
+  },
+  {
+    "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
+    "price": 5000,
+    "formattedPrice": "₹5,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_e703b03c195d4186a32e8c0b5f2e2065~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paradox-destinies-fall-ex-tins-2024-5-booster",
+    "language": "English",
+    "type": "Tin",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 42
+  },
+  {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
     "price": 2750,
     "formattedPrice": "₹2,750.00",
@@ -489,7 +513,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 41
+    "id": 43
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -501,7 +525,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 42
+    "id": 44
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -513,7 +537,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 43
+    "id": 45
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -525,7 +549,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 44
+    "id": 46
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -537,6 +561,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 45
+    "id": 47
   }
 ]
