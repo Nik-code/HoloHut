@@ -420,18 +420,6 @@
     "id": 35
   },
   {
-    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
-    "price": 7350,
-    "formattedPrice": "₹7,350.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
-    "language": "Japanese",
-    "type": "Japanese Set",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 36
-  },
-  {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
     "price": 11500,
     "formattedPrice": "₹11,500.00",
@@ -441,7 +429,55 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
+    "id": 36
+  },
+  {
+    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
+    "price": 7350,
+    "formattedPrice": "₹7,350.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
+    "language": "English",
+    "type": "Booster Box",
+    "shop": "PokeVolt",
+    "inStock": true,
     "id": 37
+  },
+  {
+    "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
+    "price": 950,
+    "formattedPrice": "₹950.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_02519b6a0d314d0db9be588d43ab2fda~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paldea-evolved-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 38
+  },
+  {
+    "name": "Pokémon TCG: Obsidian Flames Sleeved Booster Pack (10 Cards)",
+    "price": 800,
+    "formattedPrice": "₹800.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_6a6a63ab0ba44ffc9e890d2392273b58~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-scarlet-violet-obsidian-flames-sleeved-booster-pack-10-cards",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 39
+  },
+  {
+    "name": "Sword & Shield-Fusion Strike Booster Pack (10 Cards) (Random Art)",
+    "price": 1100,
+    "formattedPrice": "₹1,100.00",
+    "image": "https://static.wixstatic.com/media/46848b_cdc6665bc8a34a63bdd23813334a5870~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/sword-shield-fusion-strike-booster-pack-10-cards",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 40
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -453,7 +489,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 38
+    "id": 41
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -465,7 +501,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 39
+    "id": 42
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -477,7 +513,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 40
+    "id": 43
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -489,7 +525,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 41
+    "id": 44
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -501,7 +537,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 42
+    "id": 45
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -513,7 +549,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 43
+    "id": 46
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -525,6 +561,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 44
+    "id": 47
   }
 ]
