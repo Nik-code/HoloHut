@@ -480,6 +480,18 @@
     "id": 40
   },
   {
+    "name": "Pokemon Crimson Haze sv5a Booster Pack",
+    "price": 240,
+    "formattedPrice": "₹240.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_1fb8952cb05147f598759dd165591475~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-crimson-haze-sv5a-booster-pack",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 41
+  },
+  {
     "name": "Pokemon Night Wanderer sv6a booster pack",
     "price": 240,
     "formattedPrice": "₹240.00",
@@ -489,7 +501,19 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 41
+    "id": 42
+  },
+  {
+    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
+    "price": 7350,
+    "formattedPrice": "₹7,350.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 43
   },
   {
     "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
@@ -501,19 +525,7 @@
     "type": "Booster Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 42
-  },
-  {
-    "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
-    "price": 7350,
-    "formattedPrice": "₹7,350.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
-    "language": "English",
-    "type": "Booster Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 43
+    "id": 44
   },
   {
     "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
@@ -525,7 +537,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 44
+    "id": 45
   },
   {
     "name": "Pokémon TCG: Obsidian Flames Sleeved Booster Pack (10 Cards)",
@@ -537,7 +549,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 45
+    "id": 46
   },
   {
     "name": "Sword & Shield-Fusion Strike Booster Pack (10 Cards) (Random Art)",
@@ -549,7 +561,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 46
+    "id": 47
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -561,7 +573,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 47
+    "id": 48
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -573,7 +585,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 48
+    "id": 49
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -585,7 +597,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 49
+    "id": 50
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -597,7 +609,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 50
+    "id": 51
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -609,7 +621,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 51
+    "id": 52
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -621,7 +633,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 52
+    "id": 53
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -633,6 +645,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 53
+    "id": 54
   }
 ]
