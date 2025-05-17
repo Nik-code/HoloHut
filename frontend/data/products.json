@@ -264,23 +264,23 @@
     "id": 22
   },
   {
-    "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
-    "price": 11500,
-    "formattedPrice": "₹11,500.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_3649872d6fc64ac099f3a456e95e1e3d~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-obsidian-flames-half-booster-box-18-packs",
-    "language": "English",
-    "type": "Booster Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 23
-  },
-  {
     "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
     "price": 7350,
     "formattedPrice": "₹7,350.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 23
+  },
+  {
+    "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
+    "price": 11500,
+    "formattedPrice": "₹11,500.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_3649872d6fc64ac099f3a456e95e1e3d~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-obsidian-flames-half-booster-box-18-packs",
     "language": "English",
     "type": "Booster Box",
     "shop": "PokeVolt",
@@ -406,29 +406,5 @@
     "shop": "PokeVolt",
     "inStock": true,
     "id": 34
-  },
-  {
-    "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
-    "price": 4000,
-    "formattedPrice": "₹4,000.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_7844a209517c4177a40b1b56d0fb86c1~mv2.png",
-    "link": "https://www.pokevolt.shop/product-page/sword-shield-chilling-reign-3-pack-blister",
-    "language": "English",
-    "type": "Blister Pack",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 35
-  },
-  {
-    "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
-    "price": 2700,
-    "formattedPrice": "₹2,700.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_e528aa8256634804baaef57aaf781beb~mv2.png",
-    "link": "https://www.pokevolt.shop/product-page/pre-order-pokemon-tcg-journey-together-3-pack-blister-yanmega-scrafty",
-    "language": "English",
-    "type": "Blister Pack",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 36
   }
 ]
