@@ -276,23 +276,23 @@
     "id": 23
   },
   {
-    "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
-    "price": 11500,
-    "formattedPrice": "₹11,500.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_3649872d6fc64ac099f3a456e95e1e3d~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-obsidian-flames-half-booster-box-18-packs",
-    "language": "English",
-    "type": "Booster Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 24
-  },
-  {
     "name": "Pokemon Scarlet & Violet Booster Box SV1a - Triple Beat",
     "price": 7350,
     "formattedPrice": "₹7,350.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 24
+  },
+  {
+    "name": "Pokémon TCG:  Obsidian Flames- Half Booster Box (18 Packs)",
+    "price": 11500,
+    "formattedPrice": "₹11,500.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_3649872d6fc64ac099f3a456e95e1e3d~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-obsidian-flames-half-booster-box-18-packs",
     "language": "English",
     "type": "Booster Box",
     "shop": "PokeVolt",
@@ -396,6 +396,18 @@
     "id": 33
   },
   {
+    "name": "Lillie Premium Tournament Collection",
+    "price": 6600,
+    "formattedPrice": "₹6,600.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_357892093baa41c691ef8749f9dbaf70~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/lillie-premium-tournament-collection",
+    "language": "English",
+    "type": "Collection Box",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 34
+  },
+  {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
     "price": 2750,
     "formattedPrice": "₹2,750.00",
@@ -405,7 +417,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 34
+    "id": 35
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -417,7 +429,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 35
+    "id": 36
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -429,7 +441,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 36
+    "id": 37
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -441,7 +453,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 37
+    "id": 38
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -453,6 +465,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 38
+    "id": 39
   }
 ]
