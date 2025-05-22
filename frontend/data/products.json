@@ -233,8 +233,8 @@
     "formattedPrice": "₹7,350.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
-    "language": "English",
-    "type": "Booster Box",
+    "language": "Japanese",
+    "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
     "id": 20
@@ -264,18 +264,6 @@
     "id": 22
   },
   {
-    "name": "Pokémon: Scarlet & Violet-151 Booster Pack",
-    "price": 1250,
-    "formattedPrice": "₹1,250.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_27badc8d5d074440bc3c6ac555e5c7ff~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-scarlet-violet-151-booster-pack",
-    "language": "English",
-    "type": "Single Booster Pack",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 23
-  },
-  {
     "name": "Pokémon Trading Card Game: Sword & Shield Silver Tempest Booster Pack",
     "price": 850,
     "formattedPrice": "₹850.00",
@@ -285,7 +273,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 24
+    "id": 23
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -297,7 +285,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 25
+    "id": 24
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -309,7 +297,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 26
+    "id": 25
   },
   {
     "name": "Lillie Premium Tournament Collection",
@@ -321,7 +309,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 26
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -333,7 +321,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 27
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -345,7 +333,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 28
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -357,7 +345,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 29
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -369,7 +357,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 30
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -381,6 +369,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 32
+    "id": 31
   }
 ]
