@@ -233,8 +233,8 @@
     "formattedPrice": "₹7,350.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_a5a1cb18a9ef4879ae050d93f373ae0d~mv2.jpg",
     "link": "https://www.pokevolt.shop/product-page/pokemon-scarlet-violet-booster-box-sv1a-triple-beat",
-    "language": "English",
-    "type": "Booster Box",
+    "language": "Japanese",
+    "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
     "id": 20
@@ -300,18 +300,6 @@
     "id": 25
   },
   {
-    "name": "Lillie Premium Tournament Collection",
-    "price": 6600,
-    "formattedPrice": "₹6,600.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_357892093baa41c691ef8749f9dbaf70~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/lillie-premium-tournament-collection",
-    "language": "English",
-    "type": "Collection Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 26
-  },
-  {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
     "price": 2750,
     "formattedPrice": "₹2,750.00",
@@ -321,7 +309,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 26
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -333,7 +321,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 27
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -345,7 +333,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 28
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -357,7 +345,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 29
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -369,6 +357,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 30
   }
 ]
