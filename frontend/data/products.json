@@ -180,6 +180,30 @@
     "id": 15
   },
   {
+    "name": "Pokémon TCG: Sword & Shield-Silver Tempest Booster Bundle (6 Packs)",
+    "price": 5200,
+    "formattedPrice": "₹5,200.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_edd8afa4c7394082ae3ca5edda2b3ddf~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-sword-shield-silver-tempest-booster-bundle-6-packs",
+    "language": "English",
+    "type": "Booster Bundle",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 16
+  },
+  {
+    "name": "Pokémon TCG: Scarlet & Violet-151 Booster Bundle",
+    "price": 8000,
+    "formattedPrice": "₹8,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_7480889cfc8349f9a4d89e44de623636~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-scarlet-violet-151-booster-bundle",
+    "language": "English",
+    "type": "Booster Bundle",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 17
+  },
+  {
     "name": "Pokemon TCG: SV10 Glory of Team Rocket Booster Pack [JP]",
     "price": 416,
     "formattedPrice": "₹416.00",
@@ -189,7 +213,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 16
+    "id": 18
   },
   {
     "name": "Pokemon TCG: SV10 The Glory of Team Rocket [JP]",
@@ -201,7 +225,19 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 17
+    "id": 19
+  },
+  {
+    "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
+    "price": 19000,
+    "formattedPrice": "₹19,000.00",
+    "image": "https://static.wixstatic.com/media/46848b_1ba119b0fbaa44b8a4a958b8e1abed17~mv2.webp",
+    "link": "https://www.pokevolt.shop/product-page/scarlet-violet-enhanced-expansion-pack-151-sv2a-booster-box",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 20
   },
   {
     "name": "Pokemon Night Wanderer sv6a booster pack",
@@ -213,7 +249,7 @@
     "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 18
+    "id": 21
   },
   {
     "name": "Scarlet & Violet-Journey Together Sleeved Booster Pack (10 Cards)",
@@ -225,7 +261,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 19
+    "id": 22
   },
   {
     "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
@@ -237,7 +273,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 20
+    "id": 23
   },
   {
     "name": "Pokémon TCG: Obsidian Flames Sleeved Booster Pack (10 Cards)",
@@ -249,7 +285,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 21
+    "id": 24
   },
   {
     "name": "Pokémon Trading Card Game: Sword & Shield Silver Tempest Booster Pack",
@@ -261,7 +297,7 @@
     "type": "Single Booster Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 22
+    "id": 25
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -273,7 +309,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 23
+    "id": 26
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -285,7 +321,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 24
+    "id": 27
   },
   {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
@@ -297,7 +333,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 25
+    "id": 28
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -309,7 +345,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 26
+    "id": 29
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -321,7 +357,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 30
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -333,7 +369,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 31
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -345,6 +381,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 32
   }
 ]
