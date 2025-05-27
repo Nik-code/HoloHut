@@ -312,6 +312,30 @@
     "id": 26
   },
   {
+    "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
+    "price": 4000,
+    "formattedPrice": "₹4,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_2a6efadda643499f95606b28e60cd650~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-paradox-destinies-tin-4-booster",
+    "language": "English",
+    "type": "Tin",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 27
+  },
+  {
+    "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
+    "price": 5000,
+    "formattedPrice": "₹5,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_e703b03c195d4186a32e8c0b5f2e2065~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paradox-destinies-fall-ex-tins-2024-5-booster",
+    "language": "English",
+    "type": "Tin",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 28
+  },
+  {
     "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
     "price": 2750,
     "formattedPrice": "₹2,750.00",
@@ -321,7 +345,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 29
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
@@ -333,7 +357,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 28
+    "id": 30
   },
   {
     "name": "Pokémon TCG: Combined Powers Premium Collection",
@@ -345,7 +369,7 @@
     "type": "Collection Box",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 29
+    "id": 31
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -357,7 +381,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 30
+    "id": 32
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -369,6 +393,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 31
+    "id": 33
   }
 ]
