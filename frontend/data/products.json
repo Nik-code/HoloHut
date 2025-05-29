@@ -204,25 +204,25 @@
     "id": 17
   },
   {
-    "name": "Pokemon TCG: SV10 The Glory of Team Rocket [JP]",
-    "price": 14000,
-    "formattedPrice": "₹14,000.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_b0477682777941c69fe7f0b66dce5102~mv2.png",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-sv10-the-glory-of-team-rocket-jp",
-    "language": "English",
-    "type": "Booster Box",
+    "name": "Pokemon TCG: SV10 Glory of Team Rocket Booster Pack [JP]",
+    "price": 416,
+    "formattedPrice": "₹416.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_3f1f95b317fd4ec78f456d6192fb119d~mv2.webp",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-sv10-glory-of-team-rocket-booster-pack-jp",
+    "language": "Japanese",
+    "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
     "id": 18
   },
   {
-    "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
-    "price": 19000,
-    "formattedPrice": "₹19,000.00",
-    "image": "https://static.wixstatic.com/media/46848b_1ba119b0fbaa44b8a4a958b8e1abed17~mv2.webp",
-    "link": "https://www.pokevolt.shop/product-page/scarlet-violet-enhanced-expansion-pack-151-sv2a-booster-box",
-    "language": "English",
-    "type": "Booster Box",
+    "name": "Pokemon TCG: SV10 The Glory of Team Rocket [JP]",
+    "price": 14000,
+    "formattedPrice": "₹14,000.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_b0477682777941c69fe7f0b66dce5102~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-sv10-the-glory-of-team-rocket-jp",
+    "language": "Japanese",
+    "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
     "id": 19
@@ -233,11 +233,71 @@
     "formattedPrice": "₹12,250.00",
     "image": "https://static.wixstatic.com/media/c6b6cb_1d54725f4221476592fb29cffa20ea38~mv2.png",
     "link": "https://www.pokevolt.shop/product-page/vstar-universe-booster-box",
-    "language": "English",
-    "type": "Booster Box",
+    "language": "Japanese",
+    "type": "Japanese Set",
     "shop": "PokeVolt",
     "inStock": true,
     "id": 20
+  },
+  {
+    "name": "Scarlet & Violet Enhanced Expansion Pack 151 sv2a booster box",
+    "price": 19000,
+    "formattedPrice": "₹19,000.00",
+    "image": "https://static.wixstatic.com/media/46848b_1ba119b0fbaa44b8a4a958b8e1abed17~mv2.webp",
+    "link": "https://www.pokevolt.shop/product-page/scarlet-violet-enhanced-expansion-pack-151-sv2a-booster-box",
+    "language": "Japanese",
+    "type": "Japanese Set",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 21
+  },
+  {
+    "name": "Scarlet & Violet-Journey Together Sleeved Booster Pack (10 Cards)",
+    "price": 710,
+    "formattedPrice": "₹710.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_8404664b0d3f460b8258465aa25bc788~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/scarlet-violet-journey-together-sleeved-booster-pack-10-cards",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 22
+  },
+  {
+    "name": "Pokemon TCG Scarlet & Violet Paldea Evolved Booster Pack",
+    "price": 950,
+    "formattedPrice": "₹950.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_02519b6a0d314d0db9be588d43ab2fda~mv2.png",
+    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paldea-evolved-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 23
+  },
+  {
+    "name": "Pokémon TCG: Sword & Shield-Silver Tempest Sleeved Booster Pack",
+    "price": 900,
+    "formattedPrice": "₹900.00",
+    "image": "https://static.wixstatic.com/media/46848b_8c7d1f59e5c641778aa51a4d385f4cf7~mv2.jpg",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-sword-shield-silver-tempest-sleeved-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 24
+  },
+  {
+    "name": "Pokémon Trading Card Game: Sword & Shield Silver Tempest Booster Pack",
+    "price": 850,
+    "formattedPrice": "₹850.00",
+    "image": "https://static.wixstatic.com/media/c6b6cb_67248dde75d94215b979904a8c3e7bec~mv2.webp",
+    "link": "https://www.pokevolt.shop/product-page/pokémon-trading-card-game-sword-shield-12-silver-tempest-booster-pack",
+    "language": "English",
+    "type": "Single Booster Pack",
+    "shop": "PokeVolt",
+    "inStock": true,
+    "id": 25
   },
   {
     "name": "Pokémon TCG: Paradox Destinies Tin (4 Booster)",
@@ -249,7 +309,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 21
+    "id": 26
   },
   {
     "name": "Pokemon TCG: Scarlet & Violet Paradox Destinies - Fall Ex Tins 2024 (5 Booster)",
@@ -261,43 +321,7 @@
     "type": "Tin",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 22
-  },
-  {
-    "name": "Pokemon TCG: 2024 Mabosstiff EX Showcase Box",
-    "price": 2750,
-    "formattedPrice": "₹2,750.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_a64f8675b8634d6c93dd2b3c7779d246~mv2.png",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-2024-mabosstiff-ex-showcase-box",
-    "language": "English",
-    "type": "Collection Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 23
-  },
-  {
-    "name": "Pokemon TCG: Scarlet & Violet Paradox Powers Collection Box",
-    "price": 6000,
-    "formattedPrice": "₹6,000.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_6673d778666d4f8e83280cec07bbf34f~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokemon-tcg-scarlet-violet-paradox-powers-collection-box",
-    "language": "English",
-    "type": "Collection Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 24
-  },
-  {
-    "name": "Pokémon TCG: Combined Powers Premium Collection",
-    "price": 10000,
-    "formattedPrice": "₹10,000.00",
-    "image": "https://static.wixstatic.com/media/c6b6cb_184a66da972e4591b8dd5ab884af23ab~mv2.jpg",
-    "link": "https://www.pokevolt.shop/product-page/pokémon-tcg-combined-powers-premium-collection",
-    "language": "English",
-    "type": "Collection Box",
-    "shop": "PokeVolt",
-    "inStock": true,
-    "id": 25
+    "id": 27
   },
   {
     "name": "Sword & Shield-Chilling Reign 3 Pack Blister",
@@ -309,7 +333,7 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 26
+    "id": 28
   },
   {
     "name": "Pokemon TCG: Journey Together - 3-Pack Blister Yanmega/Scrafty",
@@ -321,6 +345,6 @@
     "type": "Blister Pack",
     "shop": "PokeVolt",
     "inStock": true,
-    "id": 27
+    "id": 29
   }
 ]
